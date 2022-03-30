@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  background-color: #9daff9;
+  font-family: "Overpass", sans-serif;
+}
+
+.btn {
+  background-color: #ed463a;
+  padding: 16px 25px;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 5%;
+}
+.pagination.hidden {
+  display: none;
+}
+.pagination .question-count {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 5px;
+  font-weight: bold;
+  border-radius: 50%;
+  color: #fbdbd9;
+  text-align: center;
+  background-color: #f5937e;
+  cursor: pointer;
+}
+.pagination .question-count.active {
+  background-color: #ed463a;
+}
+
+.question, .cta-section {
+  width: 600px;
+  border-radius: 10px;
+  padding: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.question .tooltip, .cta-section .tooltip {
+  width: 120px;
+  display: block;
+  margin-top: 30px;
+  text-decoration: underline;
+  color: #707070;
+  font-size: 14px;
+  position: relative;
+  cursor: help;
+}
+.question .tooltip:hover .tip, .cta-section .tooltip:hover .tip {
+  display: block;
+}
+.question .tooltip .tip, .cta-section .tooltip .tip {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: -20px;
+  left: 120px;
+  width: 150px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.question.hidden, .hidden.cta-section {
+  display: none;
+}
+
+.question-1 {
+  background-color: #fcd8bb;
+}
+.question-1 .state-list {
+  margin: 20px 0 40px 0;
+}
+.question-1 .state-options {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.question-2 {
+  background-color: #f9beba;
+}
+.question-2 .ideology-list {
+  margin: 20px 0 40px 0;
+}
+.question-2 .ideology-options {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.question-3 {
+  background-color: #fcd8bb;
+}
+.question-3 .school-options {
+  margin-top: 20px;
+}
+.question-3 .checkbox-wrapper {
+  width: 160px;
+  background: #fff;
+  padding: 17px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.question-4 {
+  background-color: #dde3fd;
+}
+.question-4 .ethnicity-list {
+  margin: 20px 0 40px 0;
+}
+.question-4 .ethnicity-options {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.question-5 {
+  background-color: #f9dbd9;
+}
+.question-5 .faith-options {
+  margin-top: 20px;
+}
+.question-5 .checkbox-wrapper {
+  width: 160px;
+  background: #fff;
+  padding: 17px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.cta-section {
+  background-color: #f9beba;
+}
+.cta-section .email-options {
+  margin: 20px 0 40px 0;
+}
+.cta-section .agree-options,
+.cta-section .email-input {
+  margin-top: 15px;
+}
+.cta-section .agree-options label {
+  color: #707070;
+}
+.cta-section .agree-options input[type=text] {
+  padding: 17px 20px;
+  width: 80%;
+  border-radius: 10px;
+  border: none;
+}
+
+.end-screen {
+  background-color: #fcd8bb;
+  padding: 50px;
+  text-align: center;
+}
+.end-screen.hidden {
+  display: none;
+}
+.end-screen .message {
+  width: 50%;
+  margin: 0 auto;
+}
+.end-screen .message h2 {
+  margin-bottom: 20px;
+  font-size: 48px;
+}
+.end-screen .organizations {
+  width: 1270px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px auto 0 auto;
+}
+.end-screen .org {
+  color: #000;
+  width: 32%;
+  padding: 30px 40px;
+  border-radius: 10px;
+  text-align: left;
+  margin-top: 10px;
+}
+.end-screen .org.org-one {
+  background-color: #F68E3C;
+}
+.end-screen .org.org-two, .end-screen .org.org-four {
+  background-color: #f9beba;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.end-screen .org.org-four {
+  margin-left: 0;
+}
+.end-screen .org.org-three, .end-screen .org.org-five {
+  background-color: #9daff9;
+}
+.end-screen .org .org-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.end-screen .org .org-description {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.end-screen .org .org-link {
+  display: inline-block;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 20px 30px;
+  background-color: #fff;
+  font-size: 24px;
+}
+.end-screen .org .org-link .icon-link {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  vertical-align: top;
+}
+.end-screen .org .org-link .icon-link img {
+  width: 100%;
+  height: auto;
+}
+
+/*# sourceMappingURL=style.css.map */

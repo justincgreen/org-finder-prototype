@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Org Finder Prototype</title>
+</head>
+<body>
+	<div class="pagination">
+		<div class="question-count question-count-1 active">1</div>
+		<div class="question-count question-count-2">2</div>
+		<div class="question-count question-count-3">3</div>
+		<div class="question-count question-count-4">4</div>
+		<div class="question-count question-count-5">5</div>
+	</div>
+	
+	<div class="question question-1">
+		<h2>Where are you located?</h2>
+		<div class="state-list">
+			<select class="state-options">
+				<option value="none selected">- Select a state -</option>
+				<option value="arizona">Arizona</option>
+				<option value="georgia">Georgia</option>
+				<!-- <option>North Carolina</option>
+				<option>Pennsylvania</option>
+				<option value="wisconsin">Wisconsin</option> -->
+				<!-- <option value="texas">Texas</option> -->
+			</select>
+		</div>
+		<button class="btn btn-next">Next</button>
+		<span class="tooltip">
+			Why do we ask?
+			<span class="tip">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit.
+			</span>
+		</span>
+	</div>
+	
+	<div class="question question-2 hidden">
+		<h2>Does political ideology matter to you?</h2>
+		<div class="ideology-list">
+			<select class="ideology-options">
+				<option value="conservative">Yes, I'm Conservative</option>
+				<option value="liberal">Yes, I'm Liberal</option>
+				<option value="moderate">Yes, Moderate</option>
+			</select>
+		</div>
+		<button class="btn btn-next">Next</button>
+		<span class="tooltip">
+			Why do we ask?
+			<span class="tip">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit.
+			</span>
+		</span>
+	</div>
+	
+	<div class="question question-3 hidden">
+		<h2>Do you have school-aged children?</h2>
+		<div class="school-options">
+			<div class="checkbox-wrapper">
+				<input type="checkbox" class="yes-school" name="yesSchool" value="Yes">
+				<label for="yes">Yes</label>
+			</div>
+			<div class="checkbox-wrapper">
+				<input type="checkbox" class="no-school" name="noSchool" value="No">
+				<label for="no">No</label><br>
+			</div>
+		</div>
+		<button class="btn btn-next">Next</button>
+		<span class="tooltip">
+			Why do we ask?
+			<span class="tip">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit.
+			</span>
+		</span>
+	</div>
+	
+	<div class="question question-4 hidden">
+		<h2>Are you interested in joining a group that works with a specific community?</h2>
+		<div class="ethnicity-list">
+			<select class="ethnicity-options">
+				<option value="none">- Select an ethnicity -</option>
+				<option value="hispanic">Hispanic</option>
+				<option value="african american">African American</option>
+			</select>
+		</div>
+		<button class="btn btn-next">Next</button>
+		<span class="tooltip">
+			Why do we ask?
+			<span class="tip">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit.
+			</span>
+		</span>
+	</div>
+	
+	<div class="question question-5 hidden">
+		<h2>Are you interested in joining a faith-based group?</h2>
+		<div class="faith-options">
+			<div class="checkbox-wrapper">
+				<input type="checkbox" class="yes-faith" name="yesFaith" value="Yes">
+				<label for="yes">Yes</label>
+			</div>
+			<div class="checkbox-wrapper">
+				<input type="checkbox" class="no-faith" name="noFaith" value="No">
+				<label for="no">No</label><br>
+			</div>
+		</div>
+		<button class="btn btn-next-five">Next</button>
+		<span class="tooltip">
+			Why do we ask?
+			<span class="tip">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit.
+			</span>
+		</span>
+	</div>
+	
+	<div class="cta-section hidden">
+		<h2>One last thing before you go...</h2>
+		<div class="email-options">
+			<span>Enter you email address to discover groups near you working together to tackle climate change.</span>
+			<div class="agree-options">
+				<input type="checkbox" id="agree" name="agree" value="I agree to receiving marketing emails from Science MomsI agree to receiving marketing emails from Science Moms">
+				<label for="agree">I agree to receiving marketing emails from Science Moms</label>
+				<div class="email-input">
+					<input type="text" placeholder="Enter your email" class="capture-email" />
+				</div>
+			</div>
+		</div>
+		<button class="btn btn-discover">Discover groups</button>
+		<span class="tooltip">
+			Why do we ask?
+			<span class="tip">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit.
+			</span>
+		</span>
+	</div>
+	
+	<div class="end-screen hidden">
+		<div class="message">
+			<h2>Thanks for sharing!</h2>
+			<p>
+				Based on your answers, here’s three groups we think you’d make a great team member for, joining others in protecting our kids’ futures. 
+				Tap the link to each organization to learn more, and don’t forget to check out the full list below to discover even more organizations.
+			</p>
+		</div>
+		
+		<div class="organizations">
+			<div class="org org-one">
+				<h3 class="org-title org-one-title">
+					Citizens' Climate Lobby
+				</h3>
+				
+				<div class="org-description org-one-description">
+					Citizen's Climate Lobby empowers everyday people to work within their communities and members of Congress on solutions to climate change.  
+				</div>
+				
+				<a href="https://citizensclimatelobby.org/about-ccl/chapters/" target="_blank" class="org-link org-one-link">
+					<span class="org-one-link-text">Citizens' Climate Lobby</span>
+					<span class="icon-link"><img src="images/icon-link.png" /></span>
+				</a>
+			</div>
+			
+			<div class="org org-two">
+				<h3 class="org-title org-two-title">
+					Electric For All
+				</h3>
+				
+				<div class="org-description org-two-description">
+					Electric for All helps consumers understand what make and model of electric vehicles might be right for them along with the avaiability of any local, state and national incentives.
+				</div>
+				
+				<a href="https://www.electricforall.org/which-car-is-right/" target="_blank" class="org-link org-two-link">
+					<span class="org-two-link-text">Electric For All</span>
+					<span class="icon-link"><img src="images/icon-link.png" /></span>
+				</a>
+			</div>
+			
+			<div class="org org-three">
+				<h3 class="org-title org-three-title">
+					Families for a Future
+				</h3>
+				
+				<div class="org-description org-three-description">
+					Families for a Future mobilizes millions of parents and grandparents who are worried about climate change to make progress to protect families and communities. 
+				</div>
+				
+				<a href="https://afuture.org/" target="_blank" class="org-link org-three-link">
+					<span class="org-three-link-text">Families for a Future</span>
+					<span class="icon-link"><img src="images/icon-link.png" /></span>
+				</a>
+			</div>
+			
+			<div class="org org-four">
+				<h3 class="org-title org-four-title">
+					Changemakers
+				</h3>
+				
+				<div class="org-description org-four-description">
+					Changemakers is a place to connect with people who are transforming our world for the good of all. There are thousands of us. We are all ages.
+				</div>
+				
+				<a href="https://www.changemakers.com/" target="_blank" class="org-link org-four-link">
+					<span class="org-four-link-text">Changemakers</span>
+					<span class="icon-link"><img src="images/icon-link.png" /></span>
+				</a>
+			</div>
+			
+			<div class="org org-five">
+				<h3 class="org-title org-five-title">
+					Rewiring America 
+				</h3>
+				
+				<div class="org-description org-five-description">
+					Rewiring America is working to electrify everything – starting with America’s 121 million households -- to achieve national emissions goals, improve human health, lower monthly bills and create clean energy jobs.
+				</div>
+				
+				<a href="https://content.rewiringamerica.org/view/picturing-where.pdf" target="_blank" class="org-link org-five-link">
+					<span class="org-five-link-text">Rewiring America</span>
+					<span class="icon-link"><img src="images/icon-link.png" /></span>
+				</a>
+			</div>
+		</div>
+	</div>
+	
+	<script src="js/prototype.js"></script>
+</body>
+</html>

@@ -1,0 +1,298 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+// Variables
+$peach: #fcd8bb;
+$pink: #f9beba;
+$blue: #dde3fd;
+$lightpink: #f9dbd9;
+$purple: #9daff9;
+$red: #ed463a;
+$orange: #F68E3C;
+
+:root {
+	background-color: $purple;
+	font-family: 'Overpass', sans-serif;
+}
+
+.btn {
+	background-color: $red;
+	padding: 16px 25px;
+	color: #fff;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.pagination {
+	text-align: center;
+	margin-top: 5%;
+	
+	&.hidden {
+		display: none;
+	}
+
+	.question-count {
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		margin-right: 5px;
+		font-weight: bold;
+		border-radius: 50%;
+		color: #fbdbd9;
+		text-align: center;
+		background-color: #f5937e;
+		cursor: pointer;
+		
+		&.active {
+			background-color: $red;
+		}
+	}
+}
+
+.question {
+	width: 600px;
+	border-radius: 10px;
+	padding: 50px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+	.tooltip {
+		width: 120px;
+		display: block;
+		margin-top: 30px;
+		text-decoration: underline;
+		color: #707070;
+		font-size: 14px;
+		position: relative;
+		cursor: help;
+		
+		&:hover .tip {
+			display: block;
+		}
+		
+		.tip {
+			display: none;
+			background-color: rgba(255, 255, 255, 0.3);
+			position: absolute;
+			top: -20px;
+			left: 120px;
+			width: 150px;
+			padding: 5px;
+			border-radius: 5px;
+		}
+	}
+	
+	&.hidden {
+		display: none;
+	}
+}
+
+.question-1 {
+	background-color: $peach;
+	
+	.state-list {
+		margin: 20px 0 40px 0;
+	}
+	
+	.state-options {
+		padding: 15px 20px;
+		border: none;
+		border-radius: 10px;
+		width: 50%;
+	}
+}
+
+.question-2 {
+	background-color: $pink;
+	
+	.ideology-list {
+		margin: 20px 0 40px 0;
+	}
+	
+	.ideology-options {
+		padding: 15px 20px;
+		border: none;
+		border-radius: 10px;
+		width: 50%;
+	}
+}
+
+.question-3 {
+	background-color: $peach;
+	
+	.school-options {
+		margin-top: 20px;
+	}
+	
+	.checkbox-wrapper {
+		width: 160px;
+		background: #fff;
+		padding: 17px;
+		border-radius: 10px;
+		margin-bottom: 15px;
+		font-size: 24px;
+	}
+}
+
+.question-4 {
+	background-color: $blue;
+	
+	.ethnicity-list {
+		margin: 20px 0 40px 0;
+	}
+	
+	.ethnicity-options {
+		padding: 15px 20px;
+		border: none;
+		border-radius: 10px;
+		width: 50%;
+	}
+}
+
+.question-5 {
+	background-color: $lightpink;
+	
+	.faith-options {
+		margin-top: 20px;
+	}
+	
+	.checkbox-wrapper {
+		width: 160px;
+		background: #fff;
+		padding: 17px;
+		border-radius: 10px;
+		margin-bottom: 15px;
+		font-size: 24px;
+	}
+}
+
+.cta-section {
+	@extend .question;
+	background-color: $pink;
+	
+	.email-options {
+		margin: 20px 0 40px 0;
+	}
+	
+	.agree-options,
+	.email-input {
+		margin-top: 15px;
+	}
+	
+	.agree-options {
+		label {
+			color: #707070;
+		}
+		
+		input[type="text"] {
+			padding: 17px 20px;
+			width: 80%;
+			border-radius: 10px;
+			border: none;
+		}
+	}
+}
+
+.end-screen {
+	background-color: $peach;
+	padding: 50px;
+	text-align: center;
+	// position: absolute;
+	// top: 0;
+	// bottom: 0;
+	// left: 0;
+	// right: 0;
+	
+	&.hidden {
+		display: none;
+	}
+	
+	.message {
+		width: 50%;
+		margin: 0 auto;
+		
+		h2 {
+			margin-bottom: 20px;
+			font-size: 48px;
+		}
+	}
+	
+	.organizations {
+		width: 1270px;
+		display: flex;
+		flex-wrap: wrap;
+		margin: 50px auto 0 auto;
+		// justify-content: center;
+		// align-items: center;
+	}
+	
+	.org {
+		color: #000;
+		// width: 450px;
+		width: 32%;
+		padding: 30px 40px;
+		border-radius: 10px;
+		text-align: left;
+		margin-top: 10px;
+		
+		&.org-one {
+			background-color: $orange;
+		}
+		&.org-two,
+		&.org-four {
+			background-color: $pink;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+		
+		&.org-four {
+			margin-left: 0;
+		}
+		
+		&.org-three,
+		&.org-five {
+			background-color: $purple;
+		}
+		
+		.org-title {
+			font-size: 32px;
+			margin-bottom: 20px;
+		}
+		
+		.org-description {
+			font-size: 24px;
+			margin-bottom: 20px;
+		}
+		
+		.org-link {
+			display: inline-block;
+			color: #000;
+			text-transform: uppercase;
+			text-decoration: none;
+			border-radius: 10px;
+			padding: 20px 30px;
+			background-color: #fff;
+			font-size: 24px;
+			
+			.icon-link {
+				width: 25px;
+				height: 25px;
+				display: inline-block;
+				vertical-align: top;
+				
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+	}
+}
