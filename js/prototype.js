@@ -2,12 +2,13 @@
 // Arizona, Georgia, North Carolina, Pennsylvania, Wisconsin
 // Every other state gets a default national option value - which is set by default already on the result page if nothing is selected in the quiz
 
-const arizona = {
+// Arizona
+const AZ = {
 	id: 1,
 	state: 'arizona',
-	stateOnlyGroupTitle: 'Citizens\' Climate Lobby - At Large, Arizona',
-	stateOnlyGroupDescription: 'Citizens\' Climate Lobby empowers everyday people in Arizona to work within their communities and members of Congress on solutions to climate change. ',
-	stateOnlyGroupLink: 'https://citizensclimatelobby.org/chapters/Arizona_-_At_Large/',
+	stateGroupTitle: 'Citizens\' Climate Lobby - At Large, Arizona',
+	stateGroupDescription: 'Citizens\' Climate Lobby empowers everyday people in Arizona to work within their communities and members of Congress on solutions to climate change. ',
+	stateGroupLink: 'https://citizensclimatelobby.org/chapters/Arizona_-_At_Large/',
 	ideology: {
 		liberalGroupTitle: 'League of Conservation Voters',
 		liberalGroupDescription: 'LCV influences policy, holds politicians accountable, and wins elections. They fight to build a world with clean air, clean water, public lands, and a safe climate that are protected by a just and equitable democracy.',
@@ -29,9 +30,9 @@ const arizona = {
 		hispanicGroupTitle: 'Chispa Arizona',
 		hispanicGroupDescription: 'Chispa Arizona is growing latinx voices, political power and civic engagement for a cleaner future in Arizona.',
 		hispanicGroupLink: 'https://chispalcv.org/state/arizona/',
-		africanAmericanGroupTitle: 'African American Group',
-		africanAmericanGroupDescription: 'African American Group Description',
-		africanAmericanGroupLink: '#'
+		africanAmericanGroupTitle: 'NAACP',
+		africanAmericanGroupDescription: 'NAACP\'s Environmental and Justice program works to reduce harmful emissions, particularly greenhouse gases, advances energy efficiency and clean energy and strengthen\'s community resilience and livability.',
+		africanAmericanGroupLink: 'https://naacp.org/know-issues/environmental-climate-justice'
 	},
 	faith: {
 		yesFaithGroupTitle: 'Arizona Interfaith Power & Light',
@@ -41,12 +42,13 @@ const arizona = {
 	}
 }
 
-const georgia = {
+// Georgia
+const GA = {
 	id: 2,
 	state: 'georgia',
-	stateOnlyGroupTitle: 'Citizens\' Climate Lobby - Atlanta, GA Chapter',
-	stateOnlyGroupDescription: 'Citizens\' Climate Lobby empowers everyday people in Georgia to work within their communities and members of Congress on solutions to climate change.',
-	stateOnlyGroupLink: 'https://citizensclimatelobby.org/chapters/GA_Atlanta/',
+	stateGroupTitle: 'Citizens\' Climate Lobby - Atlanta, GA Chapter',
+	stateGroupDescription: 'Citizens\' Climate Lobby empowers everyday people in Georgia to work within their communities and members of Congress on solutions to climate change.',
+	stateGroupLink: 'https://citizensclimatelobby.org/chapters/GA_Atlanta/',
 	ideology: {
 		liberalGroupTitle: 'The Climate Reality Project - Atlanta, GA Chapter',
 		liberalGroupDescription: 'The Climate Reality Project is a diverse group of individuals who have come together in Georgia to solve climate change and build a sustainable future.',
@@ -80,11 +82,132 @@ const georgia = {
 	}
 }
 
+// North Carolina
+const NC = {
+	id: 3,
+	state: 'north carolina',
+	stateGroupTitle: 'Citizens\' Climate Lobby - Charlotte, NC Chapter',
+	stateGroupDescription: 'Citizens\' Climate Lobby empowers everyday people in North Carolina to work within their communities and members of Congress on solutions to climate change.',
+	stateGroupLink: 'https://community.citizensclimate.org/groups/home/1410',
+	ideology: {
+		liberalGroupTitle: 'The Climate Reality Project - Charlotte, NC Chapter',
+		liberalGroupDescription: 'The Climate Reality Project is a diverse group of individuals in North Carolina who have come together to solve climate change and build a sustainable future.',
+		liberalGroupLink: 'https://www.climaterealityproject.org/chapters-program#northcarolina',
+		conservativeGroupTitle: 'Conservatives for Clean Energy North Carolina',
+		conservativeGroupDescription: 'Conservatives for Clean Energy educates the public and decisionmakers on the economic benefits of clean energy and advocates for continued investment.',
+		conservativeGroupLink: 'https://www.cleanenergyconservatives.com/states/north-carolina/',
+		moderateGroupTitle: 'Environmental Defense Fund',
+		moderateGroupDescription: 'The Environmental Defense Fund creates transformational solutions to climate change and other environmental problems.',
+		moderateGroupLink: 'https://www.edf.org/climate'
+	},
+	school: {
+		yesSchoolGroupTitle: 'Moms Clean Air Force North Carolina',
+		yesSchoolGroupDescription: 'Moms Clean Air Force is a community of moms and dads in North Carolina united to protect children from air pollution including the urgent crisis of climate change.',
+		yesSchoolGroupLink: 'https://www.momscleanairforce.org/volunteer-states/north-carolina/',
+		noSchoolGroup: 'No school group'
+	},
+	ethnicity: {
+		hispanicGroupTitle: 'Green Latinos',
+		hispanicGroupDescription: 'Green Latinos is a coalition of Latino leaders committed to addressing national, regional and local environmental, natural resources and conservations issues that affect the health and welfare of the U.S. Latino community.',
+		hispanicGroupLink: 'https://www.greenlatinos.org/climate-and-clean-airhttps://www.greenlatinos.org/climate-and-clean-air',
+		africanAmericanGroupTitle: 'North Carolina Environmental Justice Network',
+		africanAmericanGroupDescription: 'The North Carolina Enviromental Justice Network is a grassroots, people of color-led coalition of community organizations and their supporters working on issues of climate change, environmnental, racial and social injustice.',
+		africanAmericanGroupLink: 'https://ncejn.org/issues/'
+	},
+	faith: {
+		yesFaithGroupTitle: 'North Carolina Interfaith Power & Light',
+		yesFaithGroupDescription: 'Interfaith Power and Light works with congregations of all faiths in North Carolina to save energy, go green and respond to climate change.',
+		yesFaithGroupLink: 'https://ncipl.org',
+		noFaithGroup: 'No faith group'
+	}
+}
+
+// Pennsylvania
+const PA = {
+	id: 4,
+	state: 'pennsylvania',
+	stateGroupTitle: 'Citizens\' Climate Lobby - Philadelphia, PA Chapter',
+	stateGroupDescription: 'Citizens\' Climate Lobby empowers everyday people in Pennsylvania to work within their communities and members of Congress on solutions to climate change.',
+	stateGroupLink: 'https://community.citizensclimate.org/groups/home/1178',
+	ideology: {
+		liberalGroupTitle: 'The Climate Reality Project - Lehigh Valley, PA Chapter',
+		liberalGroupDescription: 'The Climate Reality Project is a diverse group of individuals in Pennsylvania who have come together to solve climate change and build a sustainable future.',
+		liberalGroupLink: 'https://www.climaterealityproject.org/chapters-program#pennsylvania',
+		conservativeGroupTitle: 'Citizens for Responsible Energy Solutions',
+		conservativeGroupDescription: 'Citizens for Responsible Energy Solutions engages Republican policymakers and the public about responsible, conservative solutions to address our nation\'s energy, economic and environmental security while increasing America\'s competitive edge.',
+		conservativeGroupLink: 'https://cresenergy.com/',
+		moderateGroupTitle: 'Environmental Defense Fund',
+		moderateGroupDescription: 'The Environmental Defense Fund creates transformational solutions to climate change and other environmental problems.',
+		moderateGroupLink: 'https://www.edf.org/climate'
+	},
+	school: {
+		yesSchoolGroupTitle: 'Moms Clean Air Force Pennsylvania',
+		yesSchoolGroupDescription: 'Moms Clean Air Force is a community of moms and dads in Pennsylvania united to protect children from  air pollution including the urgent crisis of climate change.',
+		yesSchoolGroupLink: 'https://www.momscleanairforce.org/state-chapters/pennsylvania/',
+		noSchoolGroup: 'No school group'
+	},
+	ethnicity: {
+		hispanicGroupTitle: 'Green Latinos',
+		hispanicGroupDescription: 'Green Latinos is a coalition of Latino leaders committed to addressing national, regional and local environmental, natural resources and conservations issues that affect the health and welfare of the U.S. Latino community.',
+		hispanicGroupLink: 'https://www.greenlatinos.org/climate-and-clean-airhttps://www.greenlatinos.org/climate-and-clean-air',
+		africanAmericanGroupTitle: 'POWER',
+		africanAmericanGroupDescription: 'Power\'s Climate Justice campaign is building a powerful movement to ensure climate justice, working for racial and cconomic justice on a livable planet.',
+		africanAmericanGroupLink: 'https://powerinterfaith.org/campaigns/climate-justice/'
+	},
+	faith: {
+		yesFaithGroupTitle: 'Pennsylvania Interfaith Power & Light',
+		yesFaithGroupDescription: 'Interfaith Power and Light works with congregations of all faiths in Pennsylvania to save energy, go green and respond to climate change.',
+		yesFaithGroupLink: 'https://paipl.us/home/',
+		noFaithGroup: 'No faith group'
+	}
+}
+
+// Wisconsin
+const WI = {
+	id: 5,
+	state: 'wisconsin',
+	stateGroupTitle: 'Citizens\' Climate Lobby - WI City of Milwaukee Chapter',
+	stateGroupDescription: 'Citizen\'s Climate Lobby empowers everyday people in Wisconsin to work within their communities and members of Congress on solutions to climate change.',
+	stateGroupLink: 'https://community.citizensclimate.org/groups/home/1192',
+	ideology: {
+		liberalGroupTitle: 'The Climate Reality Project - Milwaukee, WI Chapter',
+		liberalGroupDescription: 'The Climate Reality Project is a diverse group of individuals in North Carolina who have come together to solve climate change and build a sustainable future.',
+		liberalGroupLink: 'https://www.climaterealityproject.org/chapters-program#wisconsin',
+		conservativeGroupTitle: 'Citizens for Responsible Energy Solutions',
+		conservativeGroupDescription: 'Citizens for Responsible Energy Solutions engages Republican policymakers and the public about responsible, conservative solutions to address our nation\'s energy, economic and environmental security while increasing America\'s competitive edge.',
+		conservativeGroupLink: 'https://cresenergy.com/',
+		moderateGroupTitle: 'Environmental Defense Fund',
+		moderateGroupDescription: 'The Environmental Defense Fund creates transformational solutions to climate change and other environmental problems.',
+		moderateGroupLink: 'https://www.edf.org/climate'
+	},
+	school: {
+		yesSchoolGroupTitle: 'Moms Clean Air Force',
+		yesSchoolGroupDescription: 'Moms Clean Air Force is a community of over one million moms and dads united to protect children from  air pollution including the urgent crisis of climate change.',
+		yesSchoolGroupLink: 'https://www.momscleanairforce.org/',
+		noSchoolGroup: 'No school group'
+	},
+	ethnicity: {
+		hispanicGroupTitle: 'Green Latinos',
+		hispanicGroupDescription: 'Green Latinos is a coalition of Latino leaders committed to addressing national, regional and local environmental, natural resources and conservations issues that affect the health and welfare of the U.S. Latino community.',
+		hispanicGroupLink: 'https://www.greenlatinos.org/climate-and-clean-airhttps://www.greenlatinos.org/climate-and-clean-air',
+		africanAmericanGroupTitle: 'NAACP',
+		africanAmericanGroupDescription: 'NAACP\'s Environmental and Justice program works to reduce harmful emissions, particularly greenhouse gases, advances energy efficiency and clean energy and strengthen\'s community resilience and livability.',
+		africanAmericanGroupLink: 'https://naacp.org/know-issues/environmental-climate-justice'
+	},
+	faith: {
+		yesFaithGroupTitle: 'Wisconsin Interfaith Power & Light',
+		yesFaithGroupDescription: 'Interfaith Power and Light works with congregations of all faiths in Wisconsin to save energy, go green and respond to climate change.',
+		yesFaithGroupLink: 'https://wisconsinipl.org',
+		noFaithGroup: 'No faith group'
+	}
+}
+
+// General options
 const general = {
 	id: 6,
-	groupOneTitle: 'Citizen\'s Climate Lobby',
-	groupOneDescription: 'Citizen\'s Climate Lobby empowers everyday people to work within their communities and members of Congress on solutions to climate change.',
-	groupOneLink: 'https://citizensclimatelobby.org/about-ccl/chapters/',
+	generalGroupTitle: 'Citizen\'s Climate Lobby',
+	generalGroupDescription: 'Citizen\'s Climate Lobby empowers everyday people to work within their communities and members of Congress on solutions to climate change.',
+	generalGroupLink: 'https://citizensclimatelobby.org/about-ccl/chapters/',
 	ideology: {
 		liberalGroupTitle: 'The Climate Reality Project',
 		liberalGroupDescription: 'The Climate Reality Project is a diverse group of individuals who have come together to solve climate change and build a sustainable future.',
@@ -524,106 +647,302 @@ btnDiscover.addEventListener('click', () => {
 		
 		// Output org results for Arizona
 		// Display Org One - related to ideology
-		if(result.state === 'arizona' && result.ideology === 'conservative') {			
-			// Pull data from arizona object
-			orgOneTitle.innerHTML = arizona.ideology.conservativeGroupTitle;
-			orgOneDescription.innerHTML = arizona.ideology.conservativeGroupDescription;
-			orgOneLinkText.innerHTML = arizona.ideology.conservativeGroupTitle;
-			orgOneLink.href = arizona.ideology.conservativeGroupLink;
+		if(result.state === 'AZ' && result.ideology === 'conservative') {			
+			// Pull data from AZ object
+			orgOneTitle.innerHTML = AZ.ideology.conservativeGroupTitle;
+			orgOneDescription.innerHTML = AZ.ideology.conservativeGroupDescription;
+			orgOneLinkText.innerHTML = AZ.ideology.conservativeGroupTitle;
+			orgOneLink.href = AZ.ideology.conservativeGroupLink;
 		}
-		else if(result.state === 'arizona' && result.ideology === 'liberal') {
-			orgOneTitle.innerHTML = arizona.ideology.liberalGroupTitle;
-			orgOneDescription.innerHTML = arizona.ideology.liberalGroupDescription;
-			orgOneLinkText.innerHTML = arizona.ideology.liberalGroupTitle;
-			orgOneLink.href = arizona.ideology.liberalGroupLink;
+		else if(result.state === 'AZ' && result.ideology === 'liberal') {
+			orgOneTitle.innerHTML = AZ.ideology.liberalGroupTitle;
+			orgOneDescription.innerHTML = AZ.ideology.liberalGroupDescription;
+			orgOneLinkText.innerHTML = AZ.ideology.liberalGroupTitle;
+			orgOneLink.href = AZ.ideology.liberalGroupLink;
 		}
-		else if(result.state === 'arizona' && result.ideology === 'moderate') {
-			orgOneTitle.innerHTML = arizona.ideology.moderateGroupTitle;
-			orgOneDescription.innerHTML = arizona.ideology.moderateGroupDescription;
-			orgOneLinkText.innerHTML = arizona.ideology.moderateGroupTitle;
-			orgOneLink.href = arizona.ideology.moderateGroupLink;
+		else if(result.state === 'AZ' && result.ideology === 'moderate') {
+			orgOneTitle.innerHTML = AZ.ideology.moderateGroupTitle;
+			orgOneDescription.innerHTML = AZ.ideology.moderateGroupDescription;
+			orgOneLinkText.innerHTML = AZ.ideology.moderateGroupTitle;
+			orgOneLink.href = AZ.ideology.moderateGroupLink;
 		}
 		
 		// Display Org Two - related to school age children
-		if(result.state === 'arizona' && result.school === 'yes') {
-			orgTwoTitle.innerHTML = arizona.school.yesSchoolGroupTitle;
-			orgTwoDescription.innerHTML = arizona.school.yesSchoolGroupDescription;
-			orgTwoLinkText.innerHTML = arizona.school.yesSchoolGroupTitle;
-			orgTwoLink.href = arizona.school.yesSchoolGroupLink;
+		if(result.state === 'AZ' && result.school === 'yes') {
+			orgTwoTitle.innerHTML = AZ.school.yesSchoolGroupTitle;
+			orgTwoDescription.innerHTML = AZ.school.yesSchoolGroupDescription;
+			orgTwoLinkText.innerHTML = AZ.school.yesSchoolGroupTitle;
+			orgTwoLink.href = AZ.school.yesSchoolGroupLink;
 		}
 		
 		// Display Org Three - related to ethnicity
-		if(result.state === 'arizona' && result.ethnicity === 'hispanic') {
-			orgThreeTitle.innerHTML = arizona.ethnicity.hispanicGroupTitle;
-			orgThreeDescription.innerHTML = arizona.ethnicity.hispanicGroupDescription;
-			orgThreeLinkText.innerHTML = arizona.ethnicity.hispanicGroupTitle;
-			orgThreeLink.href = arizona.ethnicity.hispanicGroupLink;
+		if(result.state === 'AZ' && result.ethnicity === 'hispanic') {
+			orgThreeTitle.innerHTML = AZ.ethnicity.hispanicGroupTitle;
+			orgThreeDescription.innerHTML = AZ.ethnicity.hispanicGroupDescription;
+			orgThreeLinkText.innerHTML = AZ.ethnicity.hispanicGroupTitle;
+			orgThreeLink.href = AZ.ethnicity.hispanicGroupLink;
 		}
-		else if(result.state === 'arizona' && result.ethnicity === 'african american') {
-			orgThreeTitle.innerHTML = arizona.ethnicity.africanAmericanGroupTitle;
-			orgThreeDescription.innerHTML = arizona.ethnicity.africanAmericanGroupDescription;
-			orgThreeLinkText.innerHTML = arizona.ethnicity.africanAmericanGroupTitle;
-			orgThreeLink.href = arizona.ethnicity.africanAmericanGroupLink;
+		else if(result.state === 'AZ' && result.ethnicity === 'african american') {
+			orgThreeTitle.innerHTML = AZ.ethnicity.africanAmericanGroupTitle;
+			orgThreeDescription.innerHTML = AZ.ethnicity.africanAmericanGroupDescription;
+			orgThreeLinkText.innerHTML = AZ.ethnicity.africanAmericanGroupTitle;
+			orgThreeLink.href = AZ.ethnicity.africanAmericanGroupLink;
 		}
 		
 		// Display Org Four - related to faith
-		if(result.state === 'arizona' && result.faith === 'yes') {
-			orgFourTitle.innerHTML = arizona.faith.yesFaithGroupTitle;
-			orgFourDescription.innerHTML = arizona.faith.yesFaithGroupDescription;
-			orgFourLinkText.innerHTML = arizona.faith.yesFaithGroupTitle;
-			orgFourLink.href = arizona.faith.yesFaithGroupLink;
+		if(result.state === 'AZ' && result.faith === 'yes') {
+			orgFourTitle.innerHTML = AZ.faith.yesFaithGroupTitle;
+			orgFourDescription.innerHTML = AZ.faith.yesFaithGroupDescription;
+			orgFourLinkText.innerHTML = AZ.faith.yesFaithGroupTitle;
+			orgFourLink.href = AZ.faith.yesFaithGroupLink;
+		}
+		
+		// Display Org Five - related to selected state 
+		if(result.state === 'AZ') {
+			orgFiveTitle.innerHTML = AZ.stateGroupTitle;
+			orgFiveDescription.innerHTML = AZ.stateGroupDescription;
+			orgFiveLinkText.innerHTML = AZ.stateGroupTitle;
+			orgFiveLink.href = AZ.stateGroupLink;
 		}
 		
 		// Output org results for Georgia
 		// Display Org One - related to ideology
-		if(result.state === 'georgia' && result.ideology === 'conservative') {			
-			// Pull data from georgia object
-			orgOneTitle.innerHTML = georgia.ideology.conservativeGroupTitle;
-			orgOneDescription.innerHTML = georgia.ideology.conservativeGroupDescription;
-			orgOneLinkText.innerHTML = georgia.ideology.conservativeGroupTitle;
-			orgOneLink.href = georgia.ideology.conservativeGroupLink;
+		if(result.state === 'GA' && result.ideology === 'conservative') {			
+			// Pull data from GA object
+			orgOneTitle.innerHTML = GA.ideology.conservativeGroupTitle;
+			orgOneDescription.innerHTML = GA.ideology.conservativeGroupDescription;
+			orgOneLinkText.innerHTML = GA.ideology.conservativeGroupTitle;
+			orgOneLink.href = GA.ideology.conservativeGroupLink;
 		}
-		else if(result.state === 'georgia' && result.ideology === 'liberal') {
-			orgOneTitle.innerHTML = georgia.ideology.liberalGroupTitle;
-			orgOneDescription.innerHTML = georgia.ideology.liberalGroupDescription;
-			orgOneLinkText.innerHTML = georgia.ideology.liberalGroupTitle;
-			orgOneLink.href = georgia.ideology.liberalGroupLink;
+		else if(result.state === 'GA' && result.ideology === 'liberal') {
+			orgOneTitle.innerHTML = GA.ideology.liberalGroupTitle;
+			orgOneDescription.innerHTML = GA.ideology.liberalGroupDescription;
+			orgOneLinkText.innerHTML = GA.ideology.liberalGroupTitle;
+			orgOneLink.href = GA.ideology.liberalGroupLink;
 		}
-		else if(result.state === 'georgia' && result.ideology === 'none') {
-			orgOneTitle.innerHTML = georgia.stateOnlyGroupTitle;
-			orgOneDescription.innerHTML = georgia.stateOnlyGroupDescription;
-			orgOneLinkText.innerHTML = georgia.stateOnlyGroupTitle;
-			orgOneLink.href = georgia.stateOnlyGroupLink;
+		else if(result.state === 'GA' && result.ideology === 'moderate') {
+			orgOneTitle.innerHTML = GA.ideology.moderateGroupTitle;
+			orgOneDescription.innerHTML = GA.ideology.moderateGroupDescription;
+			orgOneLinkText.innerHTML = GA.ideology.moderateGroupTitle;
+			orgOneLink.href = GA.ideology.moderateGroupLink;
 		}
 		
 		// Display Org Two - related to school age children
-		if(result.state === 'georgia' && result.school === 'yes') {
-			orgTwoTitle.innerHTML = georgia.school.yesSchoolGroupTitle;
-			orgTwoDescription.innerHTML = georgia.school.yesSchoolGroupDescription;
-			orgTwoLinkText.innerHTML = georgia.school.yesSchoolGroupTitle;
-			orgTwoLink.href = georgia.school.yesSchoolGroupLink;
+		if(result.state === 'GA' && result.school === 'yes') {
+			orgTwoTitle.innerHTML = GA.school.yesSchoolGroupTitle;
+			orgTwoDescription.innerHTML = GA.school.yesSchoolGroupDescription;
+			orgTwoLinkText.innerHTML = GA.school.yesSchoolGroupTitle;
+			orgTwoLink.href = GA.school.yesSchoolGroupLink;
 		}
 		
 		// Display Org Three - related to ethnicity
-		if(result.state === 'georgia' && result.ethnicity === 'hispanic') {
-			orgThreeTitle.innerHTML = georgia.ethnicity.hispanicGroupTitle;
-			orgThreeDescription.innerHTML = georgia.ethnicity.hispanicGroupDescription;
-			orgThreeLinkText.innerHTML = georgia.ethnicity.hispanicGroupTitle;
-			orgThreeLink.href = georgia.ethnicity.hispanicGroupLink;
+		if(result.state === 'GA' && result.ethnicity === 'hispanic') {
+			orgThreeTitle.innerHTML = GA.ethnicity.hispanicGroupTitle;
+			orgThreeDescription.innerHTML = GA.ethnicity.hispanicGroupDescription;
+			orgThreeLinkText.innerHTML = GA.ethnicity.hispanicGroupTitle;
+			orgThreeLink.href = GA.ethnicity.hispanicGroupLink;
 		}
-		else if(result.state === 'georgia' && result.ethnicity === 'african american') {
-			orgThreeTitle.innerHTML = georgia.ethnicity.africanAmericanGroupTitle;
-			orgThreeDescription.innerHTML = georgia.ethnicity.africanAmericanGroupDescription;
-			orgThreeLinkText.innerHTML = georgia.ethnicity.africanAmericanGroupTitle;
-			orgThreeLink.href = georgia.ethnicity.africanAmericanGroupLink;
+		else if(result.state === 'GA' && result.ethnicity === 'african american') {
+			orgThreeTitle.innerHTML = GA.ethnicity.africanAmericanGroupTitle;
+			orgThreeDescription.innerHTML = GA.ethnicity.africanAmericanGroupDescription;
+			orgThreeLinkText.innerHTML = GA.ethnicity.africanAmericanGroupTitle;
+			orgThreeLink.href = GA.ethnicity.africanAmericanGroupLink;
 		}
 		
 		// Display Org Four - related to faith
-		if(result.state === 'georgia' && result.faith === 'yes') {
-			orgFourTitle.innerHTML = georgia.faith.yesFaithGroupTitle;
-			orgFourDescription.innerHTML = georgia.faith.yesFaithGroupDescription;
-			orgFourLinkText.innerHTML = georgia.faith.yesFaithGroupTitle;
-			orgFourLink.href = georgia.faith.yesFaithGroupLink;
+		if(result.state === 'GA' && result.faith === 'yes') {
+			orgFourTitle.innerHTML = GA.faith.yesFaithGroupTitle;
+			orgFourDescription.innerHTML = GA.faith.yesFaithGroupDescription;
+			orgFourLinkText.innerHTML = GA.faith.yesFaithGroupTitle;
+			orgFourLink.href = GA.faith.yesFaithGroupLink;
+		}
+		
+		// Display Org Five - related to selected state 
+		if(result.state === 'GA') {
+			orgFiveTitle.innerHTML = GA.stateGroupTitle;
+			orgFiveDescription.innerHTML = GA.stateGroupDescription;
+			orgFiveLinkText.innerHTML = GA.stateGroupTitle;
+			orgFiveLink.href = GA.stateGroupLink;
+		}
+		
+		// Output org results for North Carolina
+		// Display Org One - related to ideology
+		if(result.state === 'NC' && result.ideology === 'conservative') {			
+			// Pull data from NC object
+			orgOneTitle.innerHTML = NC.ideology.conservativeGroupTitle;
+			orgOneDescription.innerHTML = NC.ideology.conservativeGroupDescription;
+			orgOneLinkText.innerHTML = NC.ideology.conservativeGroupTitle;
+			orgOneLink.href = NC.ideology.conservativeGroupLink;
+		}
+		else if(result.state === 'NC' && result.ideology === 'liberal') {
+			orgOneTitle.innerHTML = NC.ideology.liberalGroupTitle;
+			orgOneDescription.innerHTML = NC.ideology.liberalGroupDescription;
+			orgOneLinkText.innerHTML = NC.ideology.liberalGroupTitle;
+			orgOneLink.href = NC.ideology.liberalGroupLink;
+		}
+		else if(result.state === 'NC' && result.ideology === 'moderate') {
+			orgOneTitle.innerHTML = NC.ideology.moderateGroupTitle;
+			orgOneDescription.innerHTML = NC.ideology.moderateGroupDescription;
+			orgOneLinkText.innerHTML = NC.ideology.moderateGroupTitle;
+			orgOneLink.href = NC.ideology.moderateGroupLink;
+		}
+		
+		// Display Org Two - related to school age children
+		if(result.state === 'NC' && result.school === 'yes') {
+			orgTwoTitle.innerHTML = NC.school.yesSchoolGroupTitle;
+			orgTwoDescription.innerHTML = NC.school.yesSchoolGroupDescription;
+			orgTwoLinkText.innerHTML = NC.school.yesSchoolGroupTitle;
+			orgTwoLink.href = NC.school.yesSchoolGroupLink;
+		}
+		
+		// Display Org Three - related to ethnicity
+		if(result.state === 'NC' && result.ethnicity === 'hispanic') {
+			orgThreeTitle.innerHTML = NC.ethnicity.hispanicGroupTitle;
+			orgThreeDescription.innerHTML = NC.ethnicity.hispanicGroupDescription;
+			orgThreeLinkText.innerHTML = NC.ethnicity.hispanicGroupTitle;
+			orgThreeLink.href = NC.ethnicity.hispanicGroupLink;
+		}
+		else if(result.state === 'NC' && result.ethnicity === 'african american') {
+			orgThreeTitle.innerHTML = NC.ethnicity.africanAmericanGroupTitle;
+			orgThreeDescription.innerHTML = NC.ethnicity.africanAmericanGroupDescription;
+			orgThreeLinkText.innerHTML = NC.ethnicity.africanAmericanGroupTitle;
+			orgThreeLink.href = NC.ethnicity.africanAmericanGroupLink;
+		}
+		
+		// Display Org Four - related to faith
+		if(result.state === 'NC' && result.faith === 'yes') {
+			orgFourTitle.innerHTML = NC.faith.yesFaithGroupTitle;
+			orgFourDescription.innerHTML = NC.faith.yesFaithGroupDescription;
+			orgFourLinkText.innerHTML = NC.faith.yesFaithGroupTitle;
+			orgFourLink.href = NC.faith.yesFaithGroupLink;
+		}
+		
+		// Display Org Five - related to selected state 
+		if(result.state === 'NC') {
+			orgFiveTitle.innerHTML = NC.stateGroupTitle;
+			orgFiveDescription.innerHTML = NC.stateGroupDescription;
+			orgFiveLinkText.innerHTML = NC.stateGroupTitle;
+			orgFiveLink.href = NC.stateGroupLink;
+		}
+		
+		// Output org results for Pennsylvania
+		// Display Org One - related to ideology
+		if(result.state === 'PA' && result.ideology === 'conservative') {			
+			// Pull data from PA object
+			orgOneTitle.innerHTML = PA.ideology.conservativeGroupTitle;
+			orgOneDescription.innerHTML = PA.ideology.conservativeGroupDescription;
+			orgOneLinkText.innerHTML = PA.ideology.conservativeGroupTitle;
+			orgOneLink.href = PA.ideology.conservativeGroupLink;
+		}
+		else if(result.state === 'PA' && result.ideology === 'liberal') {
+			orgOneTitle.innerHTML = PA.ideology.liberalGroupTitle;
+			orgOneDescription.innerHTML = PA.ideology.liberalGroupDescription;
+			orgOneLinkText.innerHTML = PA.ideology.liberalGroupTitle;
+			orgOneLink.href = PA.ideology.liberalGroupLink;
+		}
+		else if(result.state === 'PA' && result.ideology === 'moderate') {
+			orgOneTitle.innerHTML = PA.ideology.moderateGroupTitle;
+			orgOneDescription.innerHTML = PA.ideology.moderateGroupDescription;
+			orgOneLinkText.innerHTML = PA.ideology.moderateGroupTitle;
+			orgOneLink.href = PA.ideology.moderateGroupLink;
+		}
+		
+		// Display Org Two - related to school age children
+		if(result.state === 'PA' && result.school === 'yes') {
+			orgTwoTitle.innerHTML = PA.school.yesSchoolGroupTitle;
+			orgTwoDescription.innerHTML = PA.school.yesSchoolGroupDescription;
+			orgTwoLinkText.innerHTML = PA.school.yesSchoolGroupTitle;
+			orgTwoLink.href = PA.school.yesSchoolGroupLink;
+		}
+		
+		// Display Org Three - related to ethnicity
+		if(result.state === 'PA' && result.ethnicity === 'hispanic') {
+			orgThreeTitle.innerHTML = PA.ethnicity.hispanicGroupTitle;
+			orgThreeDescription.innerHTML = PA.ethnicity.hispanicGroupDescription;
+			orgThreeLinkText.innerHTML = PA.ethnicity.hispanicGroupTitle;
+			orgThreeLink.href = PA.ethnicity.hispanicGroupLink;
+		}
+		else if(result.state === 'PA' && result.ethnicity === 'african american') {
+			orgThreeTitle.innerHTML = PA.ethnicity.africanAmericanGroupTitle;
+			orgThreeDescription.innerHTML = PA.ethnicity.africanAmericanGroupDescription;
+			orgThreeLinkText.innerHTML = PA.ethnicity.africanAmericanGroupTitle;
+			orgThreeLink.href = PA.ethnicity.africanAmericanGroupLink;
+		}
+		
+		// Display Org Four - related to faith
+		if(result.state === 'PA' && result.faith === 'yes') {
+			orgFourTitle.innerHTML = PA.faith.yesFaithGroupTitle;
+			orgFourDescription.innerHTML = PA.faith.yesFaithGroupDescription;
+			orgFourLinkText.innerHTML = PA.faith.yesFaithGroupTitle;
+			orgFourLink.href = PA.faith.yesFaithGroupLink;
+		}
+		
+		// Display Org Five - related to selected state 
+		if(result.state === 'PA') {
+			orgFiveTitle.innerHTML = PA.stateGroupTitle;
+			orgFiveDescription.innerHTML = PA.stateGroupDescription;
+			orgFiveLinkText.innerHTML = PA.stateGroupTitle;
+			orgFiveLink.href = PA.stateGroupLink;
+		}
+		
+		// Output org results for Wisconsin
+		// Display Org One - related to ideology
+		if(result.state === 'WI' && result.ideology === 'conservative') {			
+			// Pull data from WI object
+			orgOneTitle.innerHTML = WI.ideology.conservativeGroupTitle;
+			orgOneDescription.innerHTML = WI.ideology.conservativeGroupDescription;
+			orgOneLinkText.innerHTML = WI.ideology.conservativeGroupTitle;
+			orgOneLink.href = WI.ideology.conservativeGroupLink;
+		}
+		else if(result.state === 'WI' && result.ideology === 'liberal') {
+			orgOneTitle.innerHTML = WI.ideology.liberalGroupTitle;
+			orgOneDescription.innerHTML = WI.ideology.liberalGroupDescription;
+			orgOneLinkText.innerHTML = WI.ideology.liberalGroupTitle;
+			orgOneLink.href = WI.ideology.liberalGroupLink;
+		}
+		else if(result.state === 'WI' && result.ideology === 'moderate') {
+			orgOneTitle.innerHTML = WI.ideology.moderateGroupTitle;
+			orgOneDescription.innerHTML = WI.ideology.moderateGroupDescription;
+			orgOneLinkText.innerHTML = WI.ideology.moderateGroupTitle;
+			orgOneLink.href = WI.ideology.moderateGroupLink;
+		}
+		
+		// Display Org Two - related to school age children
+		if(result.state === 'WI' && result.school === 'yes') {
+			orgTwoTitle.innerHTML = WI.school.yesSchoolGroupTitle;
+			orgTwoDescription.innerHTML = WI.school.yesSchoolGroupDescription;
+			orgTwoLinkText.innerHTML = WI.school.yesSchoolGroupTitle;
+			orgTwoLink.href = WI.school.yesSchoolGroupLink;
+		}
+		
+		// Display Org Three - related to ethnicity
+		if(result.state === 'WI' && result.ethnicity === 'hispanic') {
+			orgThreeTitle.innerHTML = WI.ethnicity.hispanicGroupTitle;
+			orgThreeDescription.innerHTML = WI.ethnicity.hispanicGroupDescription;
+			orgThreeLinkText.innerHTML = WI.ethnicity.hispanicGroupTitle;
+			orgThreeLink.href = WI.ethnicity.hispanicGroupLink;
+		}
+		else if(result.state === 'WI' && result.ethnicity === 'african american') {
+			orgThreeTitle.innerHTML = WI.ethnicity.africanAmericanGroupTitle;
+			orgThreeDescription.innerHTML = WI.ethnicity.africanAmericanGroupDescription;
+			orgThreeLinkText.innerHTML = WI.ethnicity.africanAmericanGroupTitle;
+			orgThreeLink.href = WI.ethnicity.africanAmericanGroupLink;
+		}
+		
+		// Display Org Four - related to faith
+		if(result.state === 'WI' && result.faith === 'yes') {
+			orgFourTitle.innerHTML = WI.faith.yesFaithGroupTitle;
+			orgFourDescription.innerHTML = WI.faith.yesFaithGroupDescription;
+			orgFourLinkText.innerHTML = WI.faith.yesFaithGroupTitle;
+			orgFourLink.href = WI.faith.yesFaithGroupLink;
+		}
+		
+		// Display Org Five - related to selected state 
+		if(result.state === 'WI') {
+			orgFiveTitle.innerHTML = WI.stateGroupTitle;
+			orgFiveDescription.innerHTML = WI.stateGroupDescription;
+			orgFiveLinkText.innerHTML = WI.stateGroupTitle;
+			orgFiveLink.href = WI.stateGroupLink;
 		}
 		
 	}
